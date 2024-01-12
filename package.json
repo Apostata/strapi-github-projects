@@ -1,0 +1,55 @@
+{
+  "name": "strapi-github-projects",
+  "version": "1.0.0",
+  "description": "Strapi plugin that allows to generate projects from your github repos.",
+  "license": "MIT",
+  "author": {
+    "name": "Rene Souza"
+  },
+  "maintainers": [
+    {
+      "name": "Rene Souza"
+    }
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.server.json",
+    "develop": "tsc -p tsconfig.server.json -w"
+  },
+  "dependencies": {
+    "@octokit/request": "^8.1.6",
+    "@strapi/design-system": "^1.14.1",
+    "@strapi/helper-plugin": "^4.17.0",
+    "@strapi/icons": "^1.14.1",
+    "axios": "^1.6.5",
+    "markdown-it": "^14.0.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@strapi/typescript-utils": "^4.17.0",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.0.28",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1",
+    "@strapi/strapi": "^4.17.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "name": "strapi-github-projects",
+    "description": "Strapi plugin that allows to generate projects from your github repos",
+    "kind": "plugin"
+  }
+}
